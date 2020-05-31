@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="http://www.bradleysbookoutlet.com/wp-content/uploads/2013/06/bradleys-book-outlet-books-only-logo.png" type="image/x-icon">
+<link rel="stylesheet" type="text/css" href="style.css">
+<title>BookWorm</title>		
+</head>
+
+<style>
+		
+
+</style>
+<body>
+
+	<div class="main">
+		<nav>
+			<div class ="naslov">
+				<H1>BOOK WORM</H1>
+			</div>
+			<div class = "navigacija">
+				<ul>
+					<li><a href="Hpme.html">Home</a></li>
+					<li><a href="About.html">About</a></li>
+					
+				</ul>
+			</div>
+		</nav>
+		<div class="information">
+			<img src="http://www.bradleysbookoutlet.com/wp-content/uploads/2013/06/bradleys-book-outlet-books-only-logo.png" class = "knjiga">
+			<div class = "nevidno"></div>
+			<div id="circle">
+				<div class = "podrobnosti ena">
+					<img src="https://www.pinclipart.com/picdir/big/127-1273569_available-tools-learn-book-with-torch-logo-clipart.png">
+					<div>
+						<a href="Romani.html" style="text-decoration: none; color: black;">
+						<h1>ROMANI</h1></a>
+					</div>
+				</div>
+				<div class = "podrobnosti dva">
+					<img src="https://www.pinclipart.com/picdir/big/127-1273569_available-tools-learn-book-with-torch-logo-clipart.png">
+					<div>
+						<a href="Filmi.html" style="text-decoration: none; color: black;">
+						<h1>FILMI</h1></a>
+					</div>
+				</div>
+				<div class = "podrobnosti tri">
+					<img src="https://www.pinclipart.com/picdir/big/127-1273569_available-tools-learn-book-with-torch-logo-clipart.png">
+					<div>
+						<a href="ZnanstvenaFantastika.html" style="text-decoration: none; color: black;">
+						<h1>ZNANSTVENA</h1>
+						<h1>FANTASTIKA</h1></a>
+					</div>
+				</div>
+				<div class = "podrobnosti stiri">
+					<img src="https://www.pinclipart.com/picdir/big/127-1273569_available-tools-learn-book-with-torch-logo-clipart.png">
+					<div>
+						<a href="Kriminalke.html" style="text-decoration: none; color: black;"><h1>KRIMINALKE</h1></a>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+		<div class="controls">
+			<img src="arrow.png" id="gori">
+			<h3>...ZVRSTI...</h3>
+			<img src="arrow.png" id="doli">
+
+			
+		</div>
+	</div>
+	<script type="text/javascript">
+		var circle = document.getElementById("circle");
+		var gori = document.getElementById("gori");
+		var doli = document.getElementById("doli");
+
+		var rotateValue = circle.style.transform;
+		var rotateSum;
+
+		gori.onclick = function(){
+			rotateSum = rotateValue + "rotate(-90deg)";
+			circle.style.transform = rotateSum;
+			rotateValue = rotateSum;
+		}
+		doli.onclick = function(){
+			rotateSum = rotateValue + "rotate(90deg)";
+			circle.style.transform = rotateSum;
+			rotateValue = rotateSum;
+		}
+	</script>
+	
+</body>
+</html>
